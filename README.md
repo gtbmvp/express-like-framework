@@ -12,7 +12,7 @@ CRUD posts with express-like wrapper around http and events modules.
 
 **Execution explanation in details (in Russian)**
 
-1. `const server = new Server()` создает в своем констукторе this.emitter, запускает метод `_createServer` и инициализирует пустой массив `middlewares`;
+1. `const server = new Server()` создает в своем конструкторе this.emitter, запускает метод `_createServer` и инициализирует пустой массив `middlewares`;
 2. метод `_createServer` возвращает `http.createServer`, который запускает все middlewares:
 
 - `writeHead` - изменяет объект res (+send):
