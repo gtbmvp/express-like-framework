@@ -5,10 +5,10 @@ CRUD posts with express-like wrapper around http and events modules.
 - **Router.js** saves routes and its handlers (_endpoints_ object);
 - **Server.js**
   - for each endpoint in _endpoints_ object registers its handler to `[${path}]:[${method}]` event;
-  - on request: execute all middlewares and emits `[${path}]:[${method}]` event;
+  - on request: executes all middlewares and emits `[${path}]:[${method}]` event;
 - **writeHead.js** adds `send` method to response in _JSON_ (`res.writeHead` + `res.end`);
-- **parseReqBody.js** parse _JSON_ and add it to `body` property in `request` object;
-- **parseURL.js** parse URL and adds `pathname` and `query` properties in `response` object.
+- **parseReqBody.js** parses _JSON_ and adds it to `body` property in `request` object;
+- **parseURL.js** parses URL and adds `pathname` and `query` properties in `response` object.
 
 **Execution explanation in details (in Russian)**
 
